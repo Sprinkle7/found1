@@ -1,0 +1,35 @@
+<ion-view title="Trace">
+  <ion-content class="has-header padding scroll">
+	<div class="list">
+		<form name="myForm">
+			<div class="list">
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Title</span>
+			    <input type="text" ng-model="Title" placeholder="Found Child">
+			  </label>
+			  <label class="item item-image item-stacked-label">
+			    <img  width="50%" height="50%" id="myImage">
+			  </label> 
+			    <button class="button button-outline button-assertive icon ion-camera ion-ios7-camera" ng-click="take_picture()"> 
+			    </button>
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      Purpose
+			    </div>
+			    <select name="purpose" ng-model="purpose" id="purpose">
+			      <option value="1" selected>Looking For</option>
+			      <option value="0">Found Something</option>
+			    </select>
+		      </label>
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Description</span>
+			    <textarea ng-model="details" placeholder="Enter Description" name="posttext" rows="4"></textarea>
+			  </label>
+			  <label for="" class="item">
+			  	<button class="button button-assertive" ng-click="upload_picture()">Upload</button>
+			  </label>
+			</div>
+		</form>
+	</div>
+  </ion-content>
+</ion-view>

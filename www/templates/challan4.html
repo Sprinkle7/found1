@@ -1,0 +1,28 @@
+
+<ion-view title="Trafic Police Ticketing System">
+  <ion-content class="has-header padding scroll">
+	<div class="list">
+		<form name="myForm">
+			<div class="list list-inset">
+			  <label class="item item-input">
+			    <i class="icon ion-person placeholder-icon"></i>
+			    <input ng-model="sender_name" type="text" placeholder="Sender Name">
+			  </label>
+			</div>
+			<item class="item item-icon-left"><i class="icon ion-chatbubble-working"></i>
+			<label class="item item-input">
+				<textarea ng-model="comments" placeholder="Enter Comments" name="posttext" rows="4"></textarea>
+			</label>
+			</item>
+			<div class="item">
+				<button class="button button-block button-positive icon-left ion-ios7-camera" ng-click="take_picture()">Take Picture</button>
+			</div>
+			<div class="padding">
+				<button class="button button-block button-positive icon-right ion-chevron-right" ng-click="upload_picture()">Upload</button>
+			</div>
+			<img  width="50%" height="50%" id="myImage">      
+       		</div>
+		</form>
+	</div>
+  </ion-content>
+</ion-view>
